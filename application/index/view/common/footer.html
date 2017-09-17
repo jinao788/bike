@@ -1,0 +1,16 @@
+<div id="footer_wrap">
+    <div id="footer" text-align='center'>
+        <div class="footer_navi" >
+            <ul id="" class="menu">
+             {volist name="recBottom" id="cate"}
+                <li id="menu-item-156" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-156">
+                    <a href="__ROOT__/{if condition="$cate['type'] eq 1"}index/artlist{elseif condition="$cate['type'] eq 3" /}index/imglist{else /}index/page{/if}/index/cateid/{$cate.id}" target="_blank">{$cate.catename}</a></li>
+             {/volist}
+            </ul>
+        </div>
+         <div class="footer_info">
+            <span class="legal">{$confvalueres.Recordinformation}</a>&#160;&#160;&#160;
+
+        </div>
+    </div>
+</div>
